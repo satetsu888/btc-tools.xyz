@@ -87,7 +87,7 @@ module.exports = {
         },
         {
             "type": "service",
-            "title": "独眼竜大先生<",
+            "title": "独眼竜大先生",
             "subtitle": "",
             "description": "いわずもがな",
             "url": "https://twitter.com/dokugan_btc"
