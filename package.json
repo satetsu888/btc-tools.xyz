@@ -4,7 +4,8 @@
   "description": "[1 Col Portfolio](http://startbootstrap.com/template-overviews/1-col-portfolio/) is a one column portfolio template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
   "scripts": {
     "dev": "webpack-dev-server --hot",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "upload": "aws s3 sync . s3://www.btc-tools.xyz/ --exclude \".git/*\" --exclude \"node_modules/*\"  --acl public-read"
   },
   "author": "sat",
   "license": "MIT",
