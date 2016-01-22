@@ -7,6 +7,13 @@ module.exports = {
         },
         {
             "type": "service",
+            "title": "coincheckチェック",
+            "subtitle": "powered by 中本",
+            "description": "スマホ/PC、両対応。証拠金維持率/ポジション/総資産額などの情報一覧、証拠金維持率のアラート機能、ランキングなど",
+            "url": "https://coincheckcheck.herokuapp.com/"
+        },
+        {
+            "type": "service",
             "title": "Bitboard",
             "subtitle": "powered by fujita",
             "description": "Bitboardは日本国内の取引所の最新状況を一覧で見られるWEBサービスです",
@@ -22,7 +29,7 @@ module.exports = {
         {
             "type": "service",
             "title": "中本bot",
-            "subtitle": "",
+            "subtitle": "powered by 中本",
             "description": "coincheck専用の自動売買bot販売所です。戦略は、マイナス手数料を取りに行くために売りと買いの適切な価格に指値で板を置くというものです",
             "url": "https://bothanbai.herokuapp.com/"
         },
