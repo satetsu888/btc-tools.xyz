@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "webpack-dev-server --hot",
     "build": "webpack -p",
-    "upload": "aws s3 sync . s3://www.btc-tools.xyz/ --exclude \".git/*\" --exclude \"node_modules/*\"  --acl public-read"
+    "upload": "aws s3 sync . s3://www.btc-tools.xyz/ --exclude \".git/*\" --exclude \"node_modules/*\"  --acl public-read",
+    "deploy": "npm run build; npm run upload"
   },
   "author": "sat",
   "license": "MIT",
