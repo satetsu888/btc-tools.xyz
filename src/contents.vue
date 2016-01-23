@@ -12,7 +12,9 @@
                 <h3>{{content.title}}</h3>
                 <h4>{{content.subtitle}}</h4>
                 <p>{{content.description}}</p>
-                <a class="btn btn-primary" href="{{content.url}}" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <template v-for="link in content.links">
+                    <a style="margin:3px;"class="btn btn-primary" href="{{link.url}}" target="_blank"><span class="glyphicon glyphicon-chevron-right">{{link.text || "ViewProject"}}</span></a>
+                </template>
             </div>
         </template>
     </div>
