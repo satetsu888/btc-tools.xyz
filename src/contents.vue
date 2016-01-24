@@ -13,7 +13,7 @@
                 <h4>{{content.subtitle}}</h4>
                 <p>{{content.description}}</p>
                 <template v-for="link in content.links">
-                    <a style="margin:3px;"class="btn btn-primary" href="{{link.url}}" target="_blank"><span class="glyphicon glyphicon-chevron-right">{{link.text || "ViewProject"}}</span></a>
+                    <a v-on:click.prevent=trackOutboundLink(link.url) style="margin:3px;" class="btn btn-primary" href="{{link.url}}" target="_blank"><span class="glyphicon glyphicon-chevron-right">{{link.text || "ViewProject"}}</span></a>
                 </template>
             </div>
         </template>
@@ -24,5 +24,10 @@
 <script>
 module.exports = {
     data: function(){ return require('./contents.js')},
+    methods: {
+        trackOutboundLink: function(url){
+            this.$dispatch('trackOutboundLink', url);
+        }
+    }
 };
 </script>
