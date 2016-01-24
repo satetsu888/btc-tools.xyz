@@ -40,22 +40,16 @@ module.exports = {
         },
         {
             "type": "service",
-            "title": "中本bot for coincheck",
+            "title": "中本bot",
             "subtitle": "powered by 中本",
-            "description": "coincheck専用の自動売買bot販売所です。戦略は、マイナス手数料を取りに行くために売りと買いの適切な価格に指値で板を置くというものです",
+            "description": "自動売買botです。coincheck版は、マイナス手数料を取りに行くために売りと買いの適切な価格に指値で板を置く、bitflyer版は売りと買いの適切な価格に指値で板を置きスプレッド差を利益にするという戦略を取るようです。",
             links: [
                 {
+                    "text": "coincheck版",
                     "url": "https://bothanbai.herokuapp.com/"
-                }
-            ]
-        },
-        {
-            "type": "service",
-            "title": "中本bot for bitFlyer",
-            "subtitle": "powered by 中本",
-            "description": "bitFlyer lightning専用の自動売買bot販売所です。戦略は、売りと買いの適切な価格に指値で板を置きスプレッド差を利益にするというものです。",
-            links: [
+                },
                 {
+                    "text": "bitFlyer版",
                     "url": "https://botflyer.herokuapp.com/"
                 }
             ]
